@@ -1,0 +1,16 @@
+{
+    "db": {
+        "url": "mongodb://127.0.0.1:27017",
+        "database": "testing"
+    },
+    "app": {
+        "port": 8000
+    },   
+    "webServer": {
+        "url": "localhost",
+        "port": 8000
+    },
+    "auth":{
+        "jwtKey": "hate"
+    }
+}
