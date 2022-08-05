@@ -5,7 +5,7 @@ const user = mongoose.Schema({
   lastName: { type: String, required: false },
   username: { type: String, required: true, trim: true },
   password: { type: String, required: true },
-  isActive: { type: Boolean, default: true},
+  isActive: { type: Boolean, default: true },
   email: { type: String, required: false, trim: true },
   token: { type: String, required: false, trim: true },
   gender: {
@@ -18,9 +18,11 @@ const user = mongoose.Schema({
     },
   },
   status: { type: String, default: "active", enum: ["active", "inactive"] },
+  store: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "store",
+  },
 });
 
 const User = mongoose.model("user", user);
 module.exports = User;
-
-

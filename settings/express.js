@@ -7,10 +7,6 @@ const configure = (app) => {
 
   const root = path.normalize(__dirname + "./../");
   app.use(express.static(path.join(root, "public")));
-
-  
-  
-
 };
 
 exports.configure = configure;
