@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthName "My Protected Folder" 
+AuthUserFile /www/sites/5ce/448/www.domain.com/.htpasswd 
+require valid-user

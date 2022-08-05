@@ -1,0 +1,49 @@
+{
+    "db": {
+        "url": "mongodb://localhost:27017",
+        "database": "amber"
+    },
+    "app": {
+        "url": "https://amberclubpro.com",
+        "port": 8001
+    },
+    "webServer": {
+        "url": "https://amberclubpro.com",
+        "port": 8001
+    },
+    "auth": {
+        "jwtKey": "supersecret"
+    },
+    "agora": {
+        "appID": "86f679b6daf845bba7ba5a2096f1ff34",
+        "appCertificate": "094e885a4c2140d3aa7226b81664daa8"
+    },
+    "image": {
+        "url": "https://amberclubpro.com/images/",
+        "port": 8001
+    },
+    "video": {
+        "url": "https://amberclubpro.com/videos/",
+        "port": 8001
+    },
+    "providers": {},
+    "logger": {
+        "logStart": false,
+        "file": {
+            "filename": "logs/logs.json",
+            "level": "silly",
+            "handleExceptions": true,
+            "json": true,
+            "maxsize": 512000,
+            "maxFiles": 5,
+            "colorize": false
+        },
+        "console": {
+            "level": "debug",
+            "handleExceptions": true,
+            "json": false,
+            "colorize": true
+        },
+        "http": {}
+    }
+}

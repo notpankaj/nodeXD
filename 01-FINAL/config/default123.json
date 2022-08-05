@@ -1,0 +1,49 @@
+{
+    "db": {
+        "url": "mongodb://ambers:Z$ecurity#2020@93.188.167.68:33017",
+        "database": "amber"
+    },
+    "app": {
+        "url": "http://93.188.167.68",
+        "port": 8003
+    },
+    "webServer": {
+        "url": "http://93.188.167.68",
+        "port": 8003
+    },
+    "auth": {
+        "jwtKey": "supersecret"
+    },
+    "agora": {
+        "appID": "86f679b6daf845bba7ba5a2096f1ff34",
+        "appCertificate": "094e885a4c2140d3aa7226b81664daa8"
+    },
+    "image": {
+        "url": "http://93.188.167.68/projects/amber_nodejs/assets/images/",
+        "port": 8003
+    },
+    "video": {
+        "url": "http://93.188.167.68/projects/amber_nodejs/assets/videos/",
+        "port": 8003
+    },
+    "providers": {},
+    "logger": {
+        "logStart": false,
+        "file": {
+            "filename": "logs/logs.json",
+            "level": "silly",
+            "handleExceptions": true,
+            "json": true,
+            "maxsize": 512000,
+            "maxFiles": 5,
+            "colorize": false
+        },
+        "console": {
+            "level": "debug",
+            "handleExceptions": true,
+            "json": false,
+            "colorize": true
+        },
+        "http": {}
+    }
+}
